@@ -83,6 +83,7 @@ video, img {
   color: white;
   text-align: center;
   z-index: 1; /* Agar konten berada di atas video */
+  overflow: hidden!important;
 }
 
 /* Hero Section Gambar (Overlay) */
@@ -156,11 +157,12 @@ video, img {
 
 /* Home */
 .home {
+  position: relative;
   background-image: url(img/bg-pattern.jpg);
   background-position: var(--bg);
   background-size: cover;
   min-height: 100vh; 
-  padding-top: 10rem;
+  /* padding-top: 10rem; */
   padding-bottom: 5rem;
 }
 
@@ -279,10 +281,10 @@ video, img {
 
 /* Galeri */
 .galeri {
-  background-color: var(--bgnavyblue);
+  background: var(--bgnavyblue);
   color: #fff;
   overflow: hidden;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
 }
 
 .galeri h2 {
@@ -365,6 +367,9 @@ footer a:hover {
 
 /* Extra Large */
 @media (max-width: 1200px) {
+  .hero {
+    top: -1400px;
+  }
   .home .heart {
     transform: translateX(-50%) translateY(65px);
   }
@@ -374,6 +379,9 @@ footer a:hover {
 @media (max-width: 992px) {
     html {
         font-size: 75%;
+    }
+    .hero {
+      top: -400px;
     }
     .simply-countdown>.simply-section {
         padding: 70px;
@@ -389,6 +397,11 @@ footer a:hover {
     html {
         font-size: 65%;
     }
+
+    .hero {
+      top: -400px;
+    }
+
     .simply-countdown>.simply-section {
         padding: 60px;
         margin: 5px;
@@ -400,6 +413,9 @@ footer a:hover {
     html {
         font-size: 60%;
     }    
+    .hero {
+      top: -400px;
+    }
     .simply-countdown>.simply-section {
         /* padding: 45px; */
         padding: 35px;
@@ -494,14 +510,24 @@ footer a:hover {
   line-height: 1.6; /* Spasi antar baris lebih nyaman dibaca */
 }
 
-.galeri-wrapper {
+.galeri-wrapper,
+.galeri-wrapper-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
 }
 
-.goyang-kiri  img {
+.goyang-kiri-footer {
+  transform: scaleY(-1); /* Mirror effect */
+}
+
+.goyang-kanan-footer {
+  transform: scale(-1); /* Mirror effect */
+}
+
+.goyang-kiri img,
+.goyang-kiri-footer img {
   animation-name: goyang-kiri;
     animation-duration: 5s;
     /*rotate point*/
@@ -520,7 +546,8 @@ footer a:hover {
   transform: scaleX(-1); /* Mirror effect */
 }
 
-.goyang-kanan img {
+.goyang-kanan img,
+.goyang-kanan-footer img {
   animation-name: goyang-kanan;
     animation-duration: 5s;
     /*rotate point*/
