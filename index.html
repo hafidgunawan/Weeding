@@ -8,9 +8,11 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" /> -->
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
 
     <!-- Google Fonts -->
     <!-- <link rel="stylesheet" href="css/google-fonts.css" /> -->
@@ -20,16 +22,16 @@
     <!-- AOS -->
     <link rel="stylesheet" href="css/aos.css" />
 
-    <!-- Fontawesome -->
-    <!-- <link rel="stylesheet" href="css/all.css" />
-    <link rel="stylesheet" href="css/fontawesome.min.css" /> -->
-
+    <!-- Font Family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
     href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100;300;400;600;700&display=swap"
     rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Gorditas:wght@400;700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CNunito%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CFleur+De+Leah%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CKelly+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.7.2' media='all' />
+
+
     <!-- simplyCountdown -->
     <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css?v=1"/>
     <script src="countdown/simplyCountdown.min.js"></script>
@@ -42,6 +44,16 @@
   <body>
     <!-- Background Video -->
     <div class="col-md-12">
+      <div class="galeri-wrapper">
+        <div class="goyang-kiri">
+          <img fetchpriority="high" decoding="async" width="150" height="467" src="img/01-1-2.png" sizes="(max-width: 350px) 100vw, 350px" />
+        </div>
+
+        <div class="goyang-kanan">
+          <img fetchpriority="high" decoding="async" width="150" height="467" src="img/01-1-2.png" sizes="(max-width: 350px) 100vw, 350px" />
+        </div>
+      </div>
+
       <div class="video-container">
         <video autoplay loop muted>
             <source src="vidio/pantai.mp4" type="video/mp4">
@@ -53,13 +65,17 @@
 
     <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center">
         <main>
-            <!-- <h3 data-aos="fade-down">Walimatul 'Urs</h3> -->
+            <img src="img/wedding-logo.png" width="80" height="80" class="img-responsive mx-auto" 
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1000" 
+            />
             <h3 data-aos="fade-down">The Wedding Of</h3>
             <h1 data-aos="fade-down">Abdul & Salsa</h1>
-            <p data-aos="fade-right">Kepada Bapak/Ibu/Saudara/i<br>Kami mengundang Anda untuk hadir di acara pernikahan kami.</p>
+            <p data-aos="fade-right">Kepada <span>Bapak/Ibu/Saudara/i</span><br>Kami mengundang Anda untuk hadir di acara pernikahan kami.</p>
             <h3 data-aos="fade-left">10 APRIL 2025</h3>
             <div class="simply-countdown" data-aos="fade-up"></div>
-            <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()">Buka undangan</a>
+            <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()" data-aos="zoom-in-up">Buka undangan</a>
         </main>
     </section>
 
@@ -67,7 +83,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 text-center">
-            <img src="img/ornament3.png" class="img-ornament" alt="" />
+            <img src="img/ornament3.png" class="img-ornament" alt="" data-aos="zoom-in-up" />
             <!-- <h3><i>Bismillahirrahmanirrahim</i></h3> -->
             <h3 class="special"><b>بسم الله الرحمن الرحيم</b></h3>
             <p>Dengan memohon rahmat dan ridho Allah Subhanahu wa Ta'ala, yang telah menciptakan makhluk-Nya berpasang-pasangan. Kami bermaksud menyeleggarakan pernikahan kami: </p>
@@ -110,6 +126,8 @@
             </div>
           </div>
 
+          <span class="heart"><i class="bi bi-heart-fill"></i></span>
+
           <div class="col-lg-6" data-aos="fade-left">
             <div class="row">
               <div class="col-4">
@@ -132,59 +150,66 @@
         
     </section>
 
-    <!-- <div class="wave-container">
+    <div class="wave-container">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
           <path class="wave" opacity="0.33" d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z"/>
           <path class="wave" opacity="0.66" d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z"/>  
           <path class="wave" d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z"/>
       </svg>
-  </div> -->
-
-  <div class="wave-container" data-negative="false">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
-      <path class="wave" opacity="0.33" d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z"/>
-      <path class="wave" opacity="0.66" d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z"/>
-      <path class="wave" d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z"/>
-    </svg>		
   </div>
-  
 
     <section id="info" class="info">
       <div class="container">
         <div class="row justify-content-center mt-4">
-          <div class="text-center">
+          <div class="text-center" 
+            data-aos="zoom-in-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
             <h2>- Save the Date -</h2>
             <p>Insya Allah rangkaian acara akan diselenggarakan pada:</p>
           </div>
           <div class="col-md-5 col-10">
-            <div class="card text-center text-bg-light mb-5">
-              <div class="card-header"><b>Akad Nikah</b></div>
+            <div class="card text-bg-light mb-5" data-aos="flip-left">
+              <div class="card-header text-center"><h3 class="fw-bold">Akad <br/> Nikah</h3></div>
               <div class="card-body">
-                <div class="row justify-content-center">
-                  <div class="col-md-6">
-                    <i class="bi bi-clock d-block"></i>
-                    <span>08.00 - selesai</span>
-                  </div>
-                  <div class="col-md-6">
-                    <i class="bi bi-calendar3 d-block"></i>
-                    <span>10 April 2025</span>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="icon-text">
+                        <i class="bi bi-clock text-navy"></i>
+                        <span>08.00 WIB s/d Selesai</span>
+                    </div>
+                    <div class="icon-text">
+                        <i class="bi bi-calendar3"></i>
+                        <span>10 April 2025</span>
+                    </div>
+                    <div class="icon-text">
+                        <i class="bi bi-geo-alt"></i>
+                        <span>Kutamaneuh, Jl. Pajajaran No.KM.4, Cikujang, Kec. Gn. Guruh, Kabupaten Sukabumi, Jawa Barat 43156</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-md-5 col-10">
-            <div class="card text-center text-bg-light">
-              <div class="card-header"><b>Syukuran Pernikahan</b></div>
+            <div class="card text-bg-light mb-5" data-aos="flip-right">
+              <div class="card-header text-center"><h3 class="fw-bold">Syukuran <br/> Pernikahan</h3></div>
               <div class="card-body">
-                <div class="row justify-content-center">
-                  <div class="col-md-6">
-                    <i class="bi bi-clock d-block"></i>
-                    <span>11.00 - selesai</span>
-                  </div>
-                  <div class="col-md-6">
-                    <i class="bi bi-calendar3 d-block"></i>
-                    <span>10 April 2025</span>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="icon-text">
+                        <i class="bi bi-clock text-navy"></i>
+                        <span>19.00 WIB s/d Selesai</span>
+                    </div>
+                    <div class="icon-text">
+                        <i class="bi bi-calendar3"></i>
+                        <span>10 April 2025</span>
+                    </div>
+                    <div class="icon-text">
+                        <i class="bi bi-geo-alt"></i>
+                        <span>( MDTA JAM'IYYATUL HUDA ), Jl. Pajajaran, Kebonmanggu, Kec. Gn. Guruh, Kabupaten Sukabumi, Jawa Barat 43156</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -192,108 +217,178 @@
           </div>
         </div>
 
-        <!-- <div class="row justify-content-center">
+        <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
-            <h2>Lokasi Acara</h2>
-            <p class="alamat">Alamat: Gedung Serbaguna Al Rahman. Masjid Jami' Baiturrahman <br> Jl. lingkar PTB, RT.1/RW.12, Duren Sawit, Kec. Duren Sawit, Kota Jakarta Timur, 
-              Daerah Khusus Ibukota Jakarta</p>
+            <h2
+              data-aos="zoom-in-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500">
+                Lokasi Akad Nikah
+            </h2>
+            <p 
+              class="alamat"
+              data-aos="fade-up"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine">
+                Alamat: KUA Kecamatan Gunungguruh, Kutamaneuh, Jl. Pajajaran No.KM.4, Cikujang, Kec. Gn. Guruh, Kabupaten Sukabumi, Jawa Barat 43156
+            </p>
 
-            <iframe 
+            <!-- <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2836846699743!2d106.91277077499042!3d-6.226278193761811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698de796863e2b%3A0xf8a57b4af5163286!2sGedung%20Serbaguna%20Al%20Rahman.%20Masjid%20Jami&#39;%20Baiturrahman%20Duren%20Sawit%20Jakarta%20Timur!5e0!3m2!1sid!2sid!4v1716084174191!5m2!1sid!2sid" 
               width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" 
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+              referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3960.5998642942727!2d106.9027669!3d-6.9383323!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6837e6bb6f821d%3A0x5df7ee21e9d656d9!2sKUA%20Kecamatan%20Gunungguruh!5e0!3m2!1sid!2sid!4v1743510576088!5m2!1sid!2sid"
+            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-aos="flip-up"></iframe>
   
             <a href="https://maps.app.goo.gl/z2QPhajTqtySWrek9" target="_blank" class="btn btn-light btn-sm my-3">Klik untuk
               membuka peta</a>
+
             <p class="description">Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di tujuan namun tidak
               ada tanda-tanda sedang dilangsungkan pernikahan, boleh jadi Anda salah jadwal, atau salah tempat.</p>
           </div>
-        </div> -->
+        </div>
       </div>
     </section>
 
-    <!-- <section id="tema" class="tema">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="text-center">
-            <h2>Adab-Adab Walimah</h2>
-            <p>Tanpa mengurangi rasa hormat, ada adab seorang muslim ketika menghadiri walimah yang harus diperhatikan :</p>
-          </div>
-          <div class="container text-center">
-            <div class="row">
-              <div class="col"><p>1. Memakai pakaian yang sopan dan menutup aurat.</p></div>
-              <div class="col"><p>2. Memperhatikan waktu sholat.</p></div>
-              <div class="col"><p>3. Mendoakan kedua mempelai.</p></div>
-            </div>
-            <div class="row">
-              <div class="col"><p>4. Tidak diperbolehkan merokok.</p></div>
-              <div class="col"><p>5. Memperhatikan adab makan.</p></div>
-              <div class="col"><p>6. Tidak berjabat tangan dengan yang bukan mahrom.</p></div>
-            </div>
-            <div class="row">
-              <div class="col"><p>7. Ruangan terpisah antara Tamu Ikhwan dan Akhwat.</p></div>
-            </div>
-            <p class="text-center">Atas perhatian dan pengertiannya, kami mengucapkan terima kasih. <br>Jazaakumullahu Khayran</p>
-          </div>
-        </div>
-          
-        <div class="row justify-content-center mt-4">
-          <div class="col-md-8 col-10 text-center">
-            <h2>- Doa untuk Pengantin -</h2>
-            <p>Barakallahu laka wa baraka ‘alaika wa jama’a bainakuma fi khayr<br>
-              “Semoga Allah memberikan keberkahan padamu dan mengumpulkan kalian berdua dalam kebaikan”<br>
-              Semoga menjadi keluarga yang sakinah mawaddah warahmah. Aamiin.</p>
-          </div>
-        </div>
-        </div>
-    </section> -->
+    <!-- Curve -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#B0C4DE" fill-opacity="0.6" 
+        d="M0,192L60,202.7C120,213,240,235,360,213.3C480,192,600,128,720,101.3C840,75,960,85,1080,101.3C1200,117,1320,139,1380,149.3L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+      </path>
+      <path fill="#8DA0C4" fill-opacity="0.8" 
+        d="M0,256L60,240C120,224,240,192,360,186.7C480,181,600,203,720,213.3C840,224,960,224,1080,208C1200,192,1320,160,1380,144L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+      </path>
+      <path fill="#6D89AB" fill-opacity="1" 
+        d="M0,288L60,282.7C120,277,240,267,360,234.7C480,203,600,149,720,144C840,139,960,181,1080,202.7C1200,224,1320,224,1380,224L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+      </path>
+    </svg>
+    <!-- End Cuve RSVP -->
 
-    <!-- <section id="rsvp" class="rsvp">
+    <section id="galeri" class="galeri position-relative">
+      <div class="galeri-wrapper">
+        <div class="goyang-kiri">
+          <img fetchpriority="high" decoding="async" width="150" height="467" src="img/01-1-2.png" sizes="(max-width: 350px) 100vw, 350px" />
+        </div>
+
+        <div class="goyang-kanan">
+          <img fetchpriority="high" decoding="async" width="150" height="467" src="img/01-1-2.png" sizes="(max-width: 350px) 100vw, 350px" />
+        </div>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-12 text-center">
+            <span>MOMEN</span>
+            <h2>Bahagia Kami</h2>
+            <p>Menikah bukanlah sebuah Ajang Perlombaan, bukan juga Soal Cepat atau Lambat. Tetapi, Pernikahan adalah siapa yang siap Mengemban Amanah untuk bisa melewati segala Momen bersama</p>
+          </div>
+        </div>
+  
+        <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
+          <div class="col mt-3">
+            <a href="img/gallery/1.png" data-toggle="lightbox" data-caption="Abdul & Salsa 1" data-gallery="mygallery">
+              <img src="img/gallery/thumbnail/1.png" alt="Abdul & Salsa 1" class="img-fluid w-100 rounded">
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="https://picsum.photos/id/300/1200/768" data-toggle="lightbox" data-caption="Abdul & Salsa 2"
+              data-gallery="mygallery">
+              <img src="https://picsum.photos/id/300/300/400" alt="Abdul & Salsa 2" class="img-fluid w-100 rounded">
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="https://picsum.photos/id/301/1200/768" data-toggle="lightbox" data-caption="Abdul & Salsa 3"
+              data-gallery="mygallery">
+              <img src="https://picsum.photos/id/301/300/400" alt="Abdul & Salsa 3" class="img-fluid w-100 rounded">
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="https://picsum.photos/id/302/1200/768" data-toggle="lightbox" data-caption="Abdul & Salsa 4"
+              data-gallery="mygallery">
+              <img src="https://picsum.photos/id/302/300/400" alt="Abdul & Salsa 4" class="img-fluid w-100 rounded">
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="https://picsum.photos/id/304/1200/768" data-toggle="lightbox" data-caption="Abdul & Salsa 5"
+              data-gallery="mygallery">
+              <img src="https://picsum.photos/id/304/300/400" alt="Abdul & Salsa 5" class="img-fluid w-100 rounded">
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="https://picsum.photos/id/305/1200/768" data-toggle="lightbox" data-caption="Abdul & Salsa 6"
+              data-gallery="mygallery">
+              <img src="https://picsum.photos/id/305/300/400" alt="Abdul & Salsa 6" class="img-fluid w-100 rounded">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rsvp" class="rsvp">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
+            <!-- Dove -->
+            <div class="elementor-icon elementor-divider__element">
+              <i aria-hidden="true" class="fas fa-dove"></i>
+            </div>
+            
             <h2>Konfirmasi Kehadiran</h2>
             <p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran.</p>
           </div>
         </div>
-  
-        <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST"
-          action="https://script.google.com/macros/s/AKfycbyddFbEJRqwEeA6OmZAuNf0jw_B30ZUOS5qSDwlAKV_nurcW7H6osJx2ZWnIeTmPm_35g/exec"
-          id="my-form">
-          <div class="col-12">
-            <div class="mb-3">
-              <label for="nama" class="form-label">Nama</label>
-              <input type="text" class="form-control" id="nama" name="nama">
+          <div class="card">
+            <div class="card-header bg-navy"><h3 class="fw-bold text-light">Form Kehadiran</h3></div>
+            <div class="card-body">
+              <form 
+                class="row row-cols-md-auto g-3 align-items-center justify-content-center" 
+                method="POST" 
+                action="https://script.google.com/macros/s/AKfycbxAAAMJJQQoMv_RBj2m6QOOECCRB3wja5spt78ECPAaueOzl29K_Cj1kYmPnHCJsV75DA/exec"
+                id="my-form">
+                <div class="col-12">
+                  <div class="mb-3">
+                    <label for="nama" class="form-label">Nama</label>
+                    <input type="text" class="form-control" id="nama" name="nama">
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="mb-3">
+                    <label for="pesan" class="form-label">Pesan</label>
+                    <textarea class="form-control" id="pesan" name="pesan"></textarea>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="mb-3">
+                    <label for="jumlah" class="form-label">Jumlah</label>
+                    <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="50" length="1" value="1">
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="mb-3">
+                    <label for="status" class="form-label">Konfirmasi</label>
+                    <select name="status" id="status" class="form-select">
+                      <option selected>Pilih salah satu</option>
+                      <option value="Hadir">Iya, Saya akan Hadir</option>
+                      <!-- <option value="Ragu">Saya Masih Ragu</option> -->
+                      <option value="Tidak Hadir">Maaf, Saya Tidak Dapat Hadir</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12" style="margin-top: 5px;">
+                  <button class="btn btn-primary py-2 px-3">Kirim</button>
+                </div>
+              </form>
             </div>
           </div>
-          <div class="col-12">
-            <div class="mb-3">
-              <label for="jumlah" class="form-label">Jumlah</label>
-              <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5" length="1" value="1">
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="mb-3">
-              <label for="status" class="form-label">Konfirmasi</label>
-              <select name="status" id="status" class="form-select">
-                <option selected>Pilih salah satu</option>
-                <option value="Hadir">Hadir</option>
-                <option value="Tidak Hadir">Tidak Hadir</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-12" style="margin-top: 35px;">
-            <button class="btn btn-primary">Kirim</button>
-          </div>
-        </form>
-        </div>
-    </section> -->
+
+        </div> <!-- End Container -->
+    </section>
 
     <footer>
       <div class="container">
         <div class="row">
           <div class="col text-center">
-            <small class="block">&copy; 2025 Abdul & Salsa Wedding. <br>All Rights Reserved.</small>
+            <small class="block">&copy; 2025 Abdul & Salsa Wedding. <br>All Rights Reserved. <br/> Design By <b><a href="https://www.instagram.com/a.hafid.g/" target="_blank">@a.hafid.g</a></b></small>
           </div>
         </div>
       </div>
@@ -382,6 +477,35 @@
         });
 
         disableScroll();
+    </script>
+
+    <script>
+      window.addEventListener("load", function () {
+        const form = document.getElementById('my-form');
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+          fetch(action, {
+            method: 'POST',
+            body: data,
+          })
+            .then(() => {
+              alert("Konfirmasi kehadiran berhasil terkirim!");
+            })
+        });
+      });
+
+    </script>
+
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const nama = urlParams.get('n') || '';
+      const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i';
+      const namaContainer = document.querySelector('.hero p span');
+      namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ',');
+
+      document.querySelector('#nama').value = nama;
     </script>
   </body>
 </html>
