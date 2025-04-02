@@ -425,7 +425,7 @@ footer a:hover {
 /* Mobile phone */
 @media (max-width: 576px) {
     html {
-        font-size: 60%;
+        font-size: 40%;
     }    
     /* .hero {
       top: -400px;
@@ -672,4 +672,12 @@ footer a:hover {
     width: 280px;
     height: 240px;
   }
+
+  .home h3.special {
+    font-size: 4rem;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
