@@ -315,7 +315,7 @@ video, img {
 
 /* Gifts */
 .gifts {
-  height: 80vh;
+  height: 100vh;
   padding-top: 15px;
   padding-bottom: 15px;
   color: var(--navy);
