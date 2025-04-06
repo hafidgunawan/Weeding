@@ -451,8 +451,8 @@
                   <h5>DANA</h5>
               </div>
               <div class="chip my-3"></div>
-              <div class="card-number" id="cardNumber">085 645 717 525</div>
-              <button class="btn-copy" onclick="copyToClipboard()">Salin Nomor</button>
+              <div class="card-number-dana" id="cardNumberDana">085 645 717 525</div>
+              <button class="btn-copy" onclick="copyToClipboardDana()">Salin Nomor</button>
               <div class="mt-3 text-start">
                   <small>ABDUL HAFID GUNAWAN</small>
                   <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" width="50" class="float-end">
@@ -593,6 +593,13 @@
     <script>
       function copyToClipboard() {
           var text = document.getElementById("cardNumber").innerText;
+          navigator.clipboard.writeText(text).then(() => {
+              alert("Nomor kartu telah disalin!");
+          });
+      }
+
+      function copyToClipboardDana() {
+          var text = document.getElementById("cardNumberDana").innerText;
           navigator.clipboard.writeText(text).then(() => {
               alert("Nomor kartu telah disalin!");
           });
